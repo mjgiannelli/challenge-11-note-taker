@@ -6,7 +6,7 @@ const {
     validateNote
 } = require('../lib/notes.js')
 // import data from /db/db
-const { notes } = require("../db/db");
+const { notes } = require("../db/notes");
 // mock (fs)
 jest.mock('fs');
 // create tests for the functions in /lib/notes
