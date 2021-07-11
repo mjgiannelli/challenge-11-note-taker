@@ -3,7 +3,7 @@ const { createNewNote, validateNote } = require('../../lib/notes');
 //import nano ID
 const { nanoid } = require('nanoid');
 // import data from /db/db
-const { notes } = require('../../db/notes');
+const { notes } = require('../../db/db');
 // import express.Router
 const router = require('express').Router();
 // create get and post route for /notes

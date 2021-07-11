@@ -6,7 +6,7 @@ const {
     validateNote
 } = require('../lib/notes.js')
 // import data from /db/db
-const { notes } = require("../db/notes");
+const { db } = require("../db/db");
 // mock (fs)
 jest.mock('fs');
 // create tests for the functions in /lib/notes
@@ -14,7 +14,7 @@ jest.mock('fs');
 test('creates a note object', () => {
     const note = createNewNote(
         { title: 'Test Title', id: 'abc', text: 'Test Text' },
-        notes
+        db
     );
 
     expect(note.title).toBe('Test Title');
