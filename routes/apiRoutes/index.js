@@ -8,6 +8,11 @@ const { db } = require('../../db/db');
 const router = require('express').Router();
 // create get and post route for /notes
 
+router.get('/notes', (req, res) => {
+    let results = db;
+    res.json(results);
+});
+
 router.post('/notes', (req, res) => {
     //code to create unique Id for each note
     req.body.id = nanoid();
