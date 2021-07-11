@@ -3,7 +3,7 @@ const { createNewNote, validateNote } = require('../../lib/notes');
 //import nano ID
 const { nanoid } = require('nanoid');
 // import data from /db/db
-const { notes } = require('../../db/db');
+const { db } = require('../../db/db');
 // import express.Router
 const router = require('express').Router();
 // create get and post route for /notes
@@ -16,7 +16,7 @@ router.post('/notes', (req, res) => {
         res.status(400).send('The note is not properly formatted or missing information.');
     } else {
         // add note to json file and notes array in this function
-        const note = createNewNote(req.body, notes);
+        const note = createNewNote(req.body, db);
         res.json(note);
     }
 })
