@@ -1,7 +1,7 @@
 // import functions from /lib/notes
 const { createNewNote, validateNote } = require('../../lib/notes');
 //import nano ID
-import { nanoid } from 'nanoid';
+const { nanoid } = require('nanoid');
 // import data from /db/db
 const { notes } = require('../../db/notes');
 // import express.Router
