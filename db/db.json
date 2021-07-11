@@ -1,23 +1,9 @@
 {
   "db": [
     {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "title": "TODO: Delete",
-      "text": "Need to figure out how to delete notes",
-      "id": "cl68K_hWQu_HGjEbnYVz1"
-    },
-    {
-      "title": "TODO: Show Notes",
-      "text": "Get notes to show up on side",
-      "id": "7VmsEzTbk6OEh1mU5LzFS"
-    },
-    {
-      "title": "test note",
-      "text": "test text",
-      "id": "2e5C2xgvMY_iQZi3rZApT"
+      "title": "Test note1 ",
+      "text": "test note 1",
+      "id": "3XHzkEF-QK034e5FYiFwJ"
     }
   ]
 }
