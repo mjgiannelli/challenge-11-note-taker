@@ -1,5 +1,5 @@
 // import functions from /lib/notes
-const { createNewNote, validateNote } = require('../../lib/notes');
+const { createNewNote, validateNote, deleteNote } = require('../../lib/notes');
 //import nano ID
 const { nanoid } = require('nanoid');
 // import data from /db/db
@@ -24,6 +24,11 @@ router.post('/notes', (req, res) => {
         const note = createNewNote(req.body, db);
         res.json(note);
     }
+})
+
+router.delete('/notes/:id', (req, res) => {
+    const updatedNotesDb = deleteNote(req.params.id, db)
+    res.json(updatedNotesDb)
 })
 
 // export router
