@@ -8,6 +8,7 @@ const { db } = require('../../db/db');
 const router = require('express').Router();
 // create get and post route for /notes
 
+// routes get fetch from client and returns the db
 router.get('/notes', (req, res) => {
     let results = db;
     res.json(results);
@@ -25,7 +26,7 @@ router.post('/notes', (req, res) => {
         res.json(note);
     }
 })
-
+// routes delete fetch from client and executes delete note and returns updated db
 router.delete('/notes/:id', (req, res) => {
     const updatedNotesDb = deleteNote(req.params.id, db)
     res.json(updatedNotesDb)
