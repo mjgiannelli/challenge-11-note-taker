@@ -1,14 +1,26 @@
 {
-  "name": "note-taker",
+  "name": "challenge-11-note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgiannelli/challenge-11-note-taker.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjgiannelli/challenge-11-note-taker/issues"
+  },
+  "homepage": "https://github.com/mjgiannelli/challenge-11-note-taker#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1",
+    "nanoid": "^3.1.23"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
